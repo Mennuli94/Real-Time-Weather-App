@@ -1,79 +1,123 @@
-# Real-Time-Weather-App
-The Real-Time Weather App is a Python-based web application built with Streamlit. It provides current weather updates and a 5-day forecast for any city worldwide using the OpenWeatherMap API. Users can see temperature, humidity, wind speed, sunrise/sunset times, and dynamic weather icons. It also allows toggling between Celsius and Fahrenheit, making it easy to access real-time weather information in a clean and interactive interface.
+====================================
+      REAL-TIME WEATHER APP
+====================================
 
-⚙️ Features
+PROJECT OVERVIEW:
+-----------------
+This is a simple Python-based web application that displays
+real-time weather information and a 5-day forecast for any city
+using the OpenWeatherMap API.
 
-Search weather by any city name
+The app is built with Streamlit for the interface, and uses
+Requests, Pandas, and Matplotlib for data handling and visualization.
 
-Display current temperature, humidity, wind speed, and weather description
+------------------------------------
+FEATURES:
+------------------------------------
+1. Enter any city name to view live weather data
+2. Displays temperature, humidity, wind speed, sunrise/sunset
+3. 5-day forecast with a temperature chart
+4. Dynamic weather icons (sunny, cloudy, rainy, etc.)
+5. Toggle between Celsius (°C) and Fahrenheit (°F)
 
-Show sunrise and sunset times for the selected city
+------------------------------------
+TOOLS AND TECHNOLOGIES USED:
+------------------------------------
+- Python 3.8 or higher
+- Streamlit
+- Requests
+- Pandas
+- Matplotlib
+- OpenWeatherMap API
 
-Toggle between Celsius and Fahrenheit
+------------------------------------
+INSTALLATION STEPS:
+------------------------------------
+1. Install Python 3.8 or higher (https://www.python.org/downloads)
+   During installation, check the box “Add Python to PATH”.
 
-View 5-day weather forecast in a simple chart
+2. Install required libraries using the terminal or command prompt:
+   pip install streamlit requests pandas matplotlib pytz
 
-Dynamic icons based on current weather conditions
+3. Download the file "weather_app.py" and place it in a folder.
 
-Clean, responsive, and easy-to-use interface
+4. Get a free API key from:
+   https://openweathermap.org/api
+   (Sign up → My API Keys → Copy the key)
 
-🧰 Technologies Used
+5. Open the file "weather_app.py" in a text editor.
+   Replace the line:
+       API_KEY = "YOUR_OPENWEATHERMAP_API_KEY"
+   with your actual API key, for example:
+       API_KEY = "abcd1234efgh5678ijkl"
 
-Python 3
+6. Save the file.
 
-Streamlit (Frontend UI)
+------------------------------------
+RUNNING THE APP:
+------------------------------------
+1. Open Command Prompt (Windows) or Terminal (Mac/Linux).
 
-Requests (API requests)
+2. Navigate to the folder where weather_app.py is saved:
+   Example:
+   cd C:\Users\YourName\Desktop
 
-OpenWeatherMap API (Real-time weather data)
+3. Run the following command:
+   python -m streamlit run weather_app.py
 
-Plotly / Matplotlib (Forecast chart visualization)
+4. The app will open automatically in your default browser.
+   If it doesn’t, go to:
+   http://localhost:8501
 
-🚀 Step-by-Step Installation & Usage Guide
-1️⃣ Clone the Repository
+------------------------------------
+USAGE:
+------------------------------------
+- Enter the name of any city (e.g., Mumbai, London, Tokyo).
+- Choose units (Celsius or Fahrenheit).
+- View:
+  * Current temperature
+  * Humidity and wind speed
+  * Sunrise and sunset times
+  * Dynamic weather icon
+  * 5-day forecast chart
 
-Open your terminal (or command prompt) and run:
+------------------------------------
+TROUBLESHOOTING:
+------------------------------------
+1. ERROR: 'streamlit not recognized'
+   → Use:
+       python -m pip install streamlit
 
-git clone <your-repo-link>
-cd real-time-weather-app
+2. ERROR: 'HTTP 401 Unauthorized'
+   → Your API key is invalid or inactive.
+     Check your key on:
+       https://home.openweathermap.org/api_keys
+     Or wait up to 1 hour for activation.
 
-2️⃣ Install Required Packages
+3. App doesn’t open automatically
+   → Manually open your browser and visit:
+       http://localhost:8501
 
-Install Streamlit and other dependencies:
+------------------------------------
+SAMPLE CITIES TO TRY:
+------------------------------------
+- Mumbai
+- New York
+- London
+- Tokyo
+- Sydney
 
-python -m pip install streamlit requests matplotlib plotly
+------------------------------------
+PROJECT FILES:
+------------------------------------
+- weather_app.py   → main Python app
+- README.txt       → project documentation
 
-3️⃣ Run the Weather App
+------------------------------------
+AUTHOR:
+------------------------------------
+Developed by: [M.V.Pavan Kumar]
+Built with: Python + Streamlit
+Data Source: OpenWeatherMap API
+------------------------------------
 
-Start the app using Streamlit:
-
-python -m streamlit run weatherapp.py
-
-4️⃣ Open the App in Your Browser
-
-Once the app starts, it will automatically open a browser window at:
-http://localhost:8501
-
-If it doesn’t open automatically, copy the URL into your browser.
-
-5️⃣ Using the App
-
-Enter the city name in the input box.
-
-Click Submit or press Enter.
-
-View current weather details: temperature, humidity, wind speed, sunrise, and sunset times.
-
-Toggle Celsius/Fahrenheit as needed.
-
-Scroll down to see the 5-day forecast chart and dynamic weather icons.
-
-6️⃣ Check Streamlit Version (Optional)
-
-To verify your Streamlit installation:
-
-python -m streamlit --version
-
-🎯 Objective
-
-To create an easy-to-use, interactive dashboard that provides real-time weather updates and a 5-day forecast, helping users access accurate weather information for any city quickly and efficiently.
