@@ -1,5 +1,5 @@
 ====================================
-      REAL-TIME WEATHER APP
+        REAL-TIME WEATHER APP
 ====================================
 
 PROJECT OVERVIEW:
